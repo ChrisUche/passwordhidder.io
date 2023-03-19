@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    font-family: 'poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: grey;
+    min-height: 100vh;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+
+main{
+    background: #ffffff;
+    color: #2b2d2f;
+    width: 350px;
+    height: 350px;
+    position: relative;
+    padding: 2rem;
+    border-radius: 15%;
+}
+
+form{
+    display: block;
+}
+
+label{
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+form h3{
+    font-size: x-large;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+label span{
+    display: block;
+    color: #aaa;
+    font-weight: 700;
+    font-size: medium;
+    margin-bottom:8px ;
+}
+
+label:focus-within span{
+    color: #2b2d2f;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus{
+border-color: #2b2d2f;
+}
+
+.button{
+    display: flex;
+    margin-left: 8em;
+    border: none;
+    width: fit-content;
+    cursor: pointer;
+    background: #2b2d2f;
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 8%;
+    font-weight: 700;
+    transition: background-color 0.3s ease-out;
+}
+
+.button:hover{
+    background-color: crimson;
+}
+
+.password-wrap{
+    position: relative;
+}
+
+#show-pasword{
+    position: absolute;
+    top: 50%;
+    right:  120px;
+    margin-top: 2px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 1.5rem;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: transparent;
+}
+
+#show-pasword span{
+    width: 100%;
+    height: auto;
+}
+
+/*nav .profile-area .theme-btn{
+    display: flex;
+    background: var(--color-light);
+    width: 5em;
+    height: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: var(--border-radius-2);
+}
+
+

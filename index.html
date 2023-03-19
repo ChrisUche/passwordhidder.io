@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Material cdn-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script defer src="./app.js"></script>
+
+</head>
+<body>
+    <main>
+        <form >
+            <h3>Login</h3>
+
+            <label class="first">
+                <span>Username</span>
+                    <input
+                     type="text"
+                     id="username"
+                     placeholder="Enter your username" />
+                
+            </label>
+
+            <label class="second">
+                <span>Password</span>
+                <div class="password-wrap">
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password" />
+                        <img src="./visibility_FILL0_wght400_GRAD0_opsz48.svg" alt="show password" id="show-pasword">
+                        <!-- <button type="button" id="show-pasword">
+                            <span class="material-icons-sharp active">visibility_off</span>
+                            <span class="material-icons-sharp ">visibility</span>
+                        </button>-->
+                </div>
+            </label>
+
+            <button class="button" type="submit">
+                LOG ME IN!
+            </button>
+        </form>
+    </main>
+</body>
+</html>
